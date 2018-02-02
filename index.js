@@ -1,9 +1,13 @@
-var a = 49;
+var num = 57;
 
-if (a >= 10 && a < 100) {
-    var y = a % 10
-    var  x = (a - y)/ 10;  
-    console.log(y + "" + x);
+if(typeof num === "number"){
+    if (num >= 10 && num < 100) {
+        var secondNum = num % 10
+        var  firstNum = (num - secondNum)/ 10;  
+        console.log(secondNum + "" + firstNum);
+    } else {
+        console.log("Error: Wrong number");
+    }
 } else {
-    console.log("Error");
+    console.log('Error: NaN')
 }
