@@ -11,3 +11,12 @@ if(typeof num === "number"){
 } else {
     console.log('Error: NaN')
 }
+
+var newNum = 43;
+
+var fnum = newNum.toString().charAt(0)
+var snum = newNum.toString().charAt(1)
+
+ var result = snum + fnum
+
+ console.log(result)
