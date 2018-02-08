@@ -1,7 +1,7 @@
 function drawLines(num1, num2, num3) {
-    l1 = ""
-    l2 = ""
-    l3 = ""
+    var l1 = ""
+    var l2 = ""
+    var l3 = ""
 
     for(var i = 0; i < num1; i++) {
         l1 += "*"
@@ -17,9 +17,7 @@ function drawLines(num1, num2, num3) {
     console.log(l1)
     console.log(l2)
     console.log(l3)
-
     return ""
-
 }
 
 first = 4
