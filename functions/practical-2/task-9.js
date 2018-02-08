@@ -6,13 +6,13 @@ function splitter(str, separator) {
     }
 
     for (var i = 0; i < str.length; i++) {
-        newString += str[i]
-        if(str[i] === " ") {
-            console.log(str[i]);            
+        if(str[i] !== " ") {
+            newString += str[i]
+        } else {            
             newString += separator
         }       
     }
-    console.log(newString)    
+    return newString    
 }
 
-console.log(splitter("random string of words lol", "_"));
+console.log(splitter("random string of  very cool words lol"));

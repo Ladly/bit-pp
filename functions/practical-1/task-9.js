@@ -3,12 +3,13 @@ function sumOfOdds(arr) {
 
     for(var i = 0; i < arr.length; i++) {
         if(arr[i] % 2 !== 0 ) {
-            sum += arr[i]
+            sum = sum + arr[i];
+            
         }
     }
     return sum
 }
 
-testArr = [2, 3, 3, 2, 11, 1, 1, 1]
+testArr = [2, 3, 5, 2, 11, 1, 1, 1]
 
 console.log(sumOfOdds(testArr))

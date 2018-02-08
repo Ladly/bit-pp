@@ -8,7 +8,7 @@ function createSquare(num) {
             for (var j = 0; j < num; j++) {
                 str += "*"
             }
-            console.log(str)
+            console.log( str )
         } else if (i > 0 && i < num - 1) {
             for (var g = 0; g < num; g++) {
                 if (g === 0) {
