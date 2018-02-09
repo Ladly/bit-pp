@@ -4,11 +4,19 @@
 // 2, "none" -> ["none", "none"]
 // 2 -> [null, null] 
 
-// function fillArray(numberOfElements, element) {
-//     if(element === undefined) {
-//         element = null
+function fillArray(numberOfElements, element) {    
+    var newArray = []
+    if(element === undefined) {
+        element = null
+    }
 
-//     }
-//     for(var i = 0; i < )
-// }
+    for(var i = 0; i < numberOfElements; i++) {
+        newArray[i] = element
+    }
+
+    return newArray
+}
+
+console.log(fillArray(3));
+
 
