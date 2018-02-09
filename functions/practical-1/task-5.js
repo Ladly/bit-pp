@@ -11,11 +11,11 @@ function createSquare(num) {
             console.log( str )
         } else if (i > 0 && i < num - 1) {
             for (var g = 0; g < num; g++) {
-                if (g === 0) {
+                if (g === 0 && i === 1) {
                     sides += "*"
-                } else if (g > 0 && g < num - 1) {
+                } else if (g > 0 && g < num - 1 && i === 1) {
                     sides += " "
-                } else if (g === num - 1) {
+                } else if (g === num - 1 && i === 1) {
                     sides += "*"
                 }
             }
@@ -29,4 +29,4 @@ function createSquare(num) {
 
 
 
-console.log(createSquare(7))
+console.log(createSquare(10))
