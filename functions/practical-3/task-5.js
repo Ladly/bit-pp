@@ -10,17 +10,14 @@ function getLast(arr, numOfElements) {
     } else {
         newArray = []
         newArrayIndex = -1
-        for(var i = arr.length-1; i >= 0; i--) {
-            if(newArray.length < numOfElements) {
+        for(var i = arr.length-numOfElements; i < arr.length; i++) {
                 newArrayIndex++
                 newArray[newArrayIndex] = arr[i]
-            }
         }
         return newArray
     }
 }
 
-console.log(getLast([4, 2, 5, 7, 9, 0, -2, 3], 3));
+console.log(getLast([4, 2, 5, 7, 9, 0, -2, 3], 5));
 
-//have some issues with logic on second case. it does return me last n elements but wrong order.
 
