@@ -4,7 +4,7 @@ function insertString(stringg, stringToInput, position) {
         if (i === position) {
             newString += stringToInput
         } else {
-            newString += stringg[i] 
+            newString += stringg[i]
         }
     }
     return newString
