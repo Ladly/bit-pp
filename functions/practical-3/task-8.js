@@ -8,10 +8,11 @@ function findWord(str, word) {
     var wordContainer = ""
     var wordArray = []
     var wordArrayIndex = -1
+    
     for(var i = 0; i < str.length; i++) {    
         wordContainer += str[i]
-       if(str[i] === " " || str[i] === "," || i === str.length - 1) {
-           wordArrayIndex++
+       if(str[i] ===  " " || i === str.length - 1) {
+           wordArrayIndex++           
            wordArray[wordArrayIndex] = wordContainer;
            wordContainer = ""           
        }       
@@ -19,17 +20,12 @@ function findWord(str, word) {
     }
 
     for( var j = 0; j < wordArray.length; j++){
-        if(wordArray[j] === word) {
-            wordCounter++
-            console.log(wordArray[j]);
-            console.log([j]);
-            
+        if(wordArray[j] === word || wordArray[j] === word + ", " || wordArray[j] === word + " ") {
+            wordCounter++          
         }
-
     }
-    console.log(wordArray)
-    console.log(wordCounter)
+
     return word + " was found " + wordCounter + " times" 
 }
 
-console.log(findWord('aa, bb, cc, dd, aa', 'aa'));
+console.log(findWord('The quick fox brown fox', 'fox'));
