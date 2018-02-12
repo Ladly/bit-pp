@@ -2,6 +2,8 @@
 // Input array: [4, 2, 2, -1, 6]
 // Output: -1, 3
 
+"use strict"
+
 function findMin(arr) {
     var min = Infinity
     var index = arr.length
@@ -17,7 +19,7 @@ function findMin(arr) {
 }
 
 
-input = [4, 2, 2, 1, 6]
+var input = [4, 2, 2, 1, 6]
 
 console.log(findMin(input));
 

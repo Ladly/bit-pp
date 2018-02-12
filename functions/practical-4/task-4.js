@@ -2,6 +2,8 @@
 // Input array: [4, 2, 2, -1, 6]
 // Output: 2
 
+"use strict"
+
 // function secondLargest(arr) {
 //     var firstLargest = -Infinity;
 //     var secondLargest = -Infinity;
@@ -18,7 +20,11 @@
 // }
 
 
-input = [4, 2, 2, -1, 6]
+// AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+// Second lowest
+
+
+var input = [4, 2, 2, -1, 6]
 
 // console.log(secondLargest(input));
 

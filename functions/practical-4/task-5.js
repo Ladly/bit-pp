@@ -2,8 +2,10 @@
 // Input array: [3, 11, -5, -3, 2]
 // Output: 16
 
+"use strict"
+
 function sumOfPositives(arr) {
-    sum = 0;
+    var sum = 0;
 
     for (var i = 0; i < arr.length; i++) {
         if(arr[i] > 0) {
@@ -14,7 +16,7 @@ function sumOfPositives(arr) {
     return sum
 }
 
-input = [3, 11, -5, -3, 2]
+var input = [3, 11, -5, -3, 2]
 
 console.log(sumOfPositives(input));
 

@@ -5,6 +5,7 @@
 // Input array: [3, 4, 12, 8]
 // 	Output: The array isn’t symmetric.
 
+"use strict"
 
 function isSymetric(arr) {
     var behind = ""

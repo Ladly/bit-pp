@@ -2,6 +2,8 @@
 // Input array: [-3, 11, 5, 3.4, -8]
 // Output array: [-3, 22, 10, 6.8, -8]
 
+"use strict"
+
 function multiplyEvens(arr) {
     for (var i = 0; i < arr.length; i++) {
         if ( arr[i] > 0 ) {
@@ -14,6 +16,6 @@ function multiplyEvens(arr) {
     return arr
 }
 
-input = [-3, 11, 5, 3.4, -8]
+var input = [-3, 11, 5, 3.4, -8]
 
 console.log(multiplyEvens(input));
