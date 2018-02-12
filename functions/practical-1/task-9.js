@@ -1,3 +1,5 @@
+// Write a function that calculates the sum of odd elements of a given array. 
+
 function sumOfOdds(arr) {
     var sum = 0
 

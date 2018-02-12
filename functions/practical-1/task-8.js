@@ -1,3 +1,5 @@
+// Write a function that calculates a number of appearances of a given number in a given array.
+
 function numOfApp(arr,x) {
     var num = 0;
     for(var i = 0; i < arr.length; i++) {

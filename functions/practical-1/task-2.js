@@ -1,3 +1,5 @@
+// Write a function that checks if a given number is odd.
+
 function isOdd(x) {
     dunno = ""
     if(x % 2 !==0) {
