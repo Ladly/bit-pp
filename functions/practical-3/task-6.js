@@ -4,6 +4,8 @@
 // 2, "none" -> ["none", "none"]
 // 2 -> [null, null] 
 
+"use strict"
+
 function fillArray(numberOfElements, element) {    
     var newArray = []
     if(element === undefined) {

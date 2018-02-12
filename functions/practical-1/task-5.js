@@ -4,7 +4,7 @@
 //     *   *
 //     *   *
 //     *****
-
+"use strict"
 function createSquare(num) {
     var str = ""
     var sides = ""

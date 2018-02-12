@@ -5,9 +5,10 @@
 // Input:  e = 3, a = [5, -4.2, 18, 7]
 // Output: no
 
+"use strict"
 
 function isElement(arr, el) {
-    isIt = ""
+    var isIt = ""
     for(var i = 0; i < arr.length; i++) {
         if(arr[i] === el) {
             isIt = "Yes"
@@ -18,8 +19,8 @@ function isElement(arr, el) {
     return isIt
 }
 
-e = 3
+var e = 3
 // a = [5, -4.2, 3, 7]
-a = [5, -4.2, 18, 7]
+var a = [5, -4.2, 18, 7]
 
 console.log(isElement(a, e));

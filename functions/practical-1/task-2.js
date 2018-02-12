@@ -1,7 +1,7 @@
 // Write a function that checks if a given number is odd.
-
+"use strict"
 function isOdd(x) {
-    dunno = ""
+    var dunno = ""
     if(x % 2 !==0) {
         dunno = "its Odd"
     } else {

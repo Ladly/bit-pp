@@ -3,6 +3,8 @@
 // 'The quick brown fox', 'fox' -> "'fox' was found 1 times"
 // 'aa, bb, cc, dd, aa', 'aa' -> "'aa' was found 2 times"
 
+"use strict"
+
 function findWord(str, word) {
     var wordCounter = 0;
     var wordContainer = ""
