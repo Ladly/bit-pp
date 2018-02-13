@@ -1,3 +1,5 @@
+// Write a function to check whether a string is blank or not.
+"use strict"
 function testIfBlank(inp) {
     if(typeof inp !== "string" || inp.length !== 1){
         return false

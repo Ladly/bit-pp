@@ -1,6 +1,8 @@
 // Write a function to hide email address.
 // "myemailaddress@bgit.rs" -> "myemail...@bgit.rs"
 
+"use strict"
+
 function hideEmail(email) {
     var spreadOperator = "..."
     var hiddenEmail = ""

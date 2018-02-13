@@ -1,5 +1,8 @@
+
+"use strict"
+
 function insertString(stringg, stringToInput, position) {
-    newString = ""
+    var newString = ""
     for (var i = 0; i < stringg.length; i++) {
         if (i === position) {
             newString += stringToInput

@@ -1,3 +1,5 @@
+// Write a function that calculates the number of appearances of a letter a in a given string. Modify the function so it calculates the number of both letters a and A.
+"use strict"
 function numOfApp(str, char) {
     num = 0
     numOfass = 0 // :D  anyways this is other part of task
@@ -13,6 +15,6 @@ function numOfApp(str, char) {
     return numOfass
 }
 
-randStr = "raaaandomStrinAAng"
+var randStr = "raaaandomStrinAAng"
 
 console.log(numOfApp(randStr, "s"))

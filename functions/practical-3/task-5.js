@@ -1,6 +1,8 @@
 // Write a function to get the last element of an array. Passing a parameter 'n' will return the last 'n' elements of the array.
 // [7, 9, 0, -2] -> -2
-// [7, 9, 0, -2], 2 -> [0, -2]  
+// [7, 9, 0, -2], 2 -> [0, -2] 
+
+"use strict"
 
 function getLast(arr, numOfElements) {
     if (numOfElements === undefined) {
@@ -8,8 +10,8 @@ function getLast(arr, numOfElements) {
             return arr[i]
         } 
     } else {
-        newArray = []
-        newArrayIndex = -1
+        var newArray = []
+        var newArrayIndex = -1
         for(var i = arr.length-numOfElements; i < arr.length; i++) {
                 newArrayIndex++
                 newArray[newArrayIndex] = arr[i]

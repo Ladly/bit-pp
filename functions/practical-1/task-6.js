@@ -1,3 +1,8 @@
+// Write a function that draws a horizontal chart representing three given values. For example, if values are 5, 3, and 7, the function should draw:
+//     * * * * *
+//     * * *
+//     * * * * * * *
+"use strict"
 function drawLines(num1, num2, num3) {
     var l1 = ""
     var l2 = ""
@@ -20,8 +25,8 @@ function drawLines(num1, num2, num3) {
     return ""
 }
 
-first = 4
-sec = 1
-fifth = 5
+var first = 4
+var sec = 1
+var fifth = 5
 
 console.log(drawLines(first, sec, fifth))

@@ -1,3 +1,5 @@
+// Write a function that calculates the sum of odd elements of a given array. 
+"use strict"
 function sumOfOdds(arr) {
     var sum = 0
 
@@ -10,6 +12,6 @@ function sumOfOdds(arr) {
     return sum
 }
 
-testArr = [2, 3, 5, 2, 11, 1, 1, 1]
+var testArr = [2, 3, 5, 2, 11, 1, 1, 1]
 
 console.log(sumOfOdds(testArr))
