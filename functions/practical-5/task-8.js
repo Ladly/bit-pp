@@ -1,0 +1,1 @@
+// Write a function to find the maximum and minimum elements. Function returns an array.
