@@ -60,14 +60,11 @@
                 var day = this.date.getDate();
 
                 return day + "." + month + "." + year; 
-
             };
 
             this.getData = function () {
-              var result = "";              
 
-              result = this.getProgramDate() + ", " + this.programMoviesLength() + "\n" + this.listMovies();
-              return result;
+                return this.getProgramDate() + ", " + this.programMoviesLength() + "\n" + this.listMovies();
             };
         }
 
@@ -112,12 +109,12 @@
     var saturday = new Program('2017 3 24');
     var sunday = new Program('2017 3 25');
 
+    var weekendFestival = new Festival("Weekend");
+    
     saturday.addMovie(avatar);
     saturday.addMovie(wolverine);
     saturday.addMovie(thor);
     sunday.addMovie(lordOfTheRings);
-
-    var weekendFestival = new Festival("Weekend");
 
     weekendFestival.addProgram(saturday);
     weekendFestival.addProgram(sunday);
