@@ -92,7 +92,7 @@
                 var flight = "";
 
                 for(var i = 0; i < this.listOfFlights.length; i++) {
-                    flight += "\t" + this.listOfFlights[i].getData() + this.listOfFlights[i].getPassengersList() + "\n";;
+                    flight += "\t" + this.listOfFlights[i].getData() + this.listOfFlights[i].getPassengersList() + "\n";
                 }
 
                 return flight;
