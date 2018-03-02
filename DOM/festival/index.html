@@ -4,38 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Movie List</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
+
+    <title>Movie List</title>
 </head>
 <body>
+    <div class="container">
+        <h1>Movie List</h1>
+
+        <form>
+            <legend>Movie</legend>
+                <div class="form-group col-3">
+                  <label>Movie title
+                      <input type="text" class="form-control movie-title" name="movie-title" aria-describedby="emailHelp" placeholder="Enter title">
+                    </label>
+                </div>
+                <div class="form-group col-3">
+                    <label>Movie length(min)                     
+                      <input type="number" class="form-control movie-length" placeholder="Enter movie length">
+                    </label>
+                </div>
+                <div class="form-group col-3">
+                    <label for="genre">Example select</label>
+                    <select class="form-control" id="genre">
+                        <option value="action">Action</option>
+                        <option value="drama">Drama</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="comedy">Comedy</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn btn-primary movie-submit" value="Create Movie">
+                </div>
+              </form>
     
-    <h1>Movie List</h1>
-   
-    <form>
-        <label>Movie:<input type="text" name="title" class="movie-title" placeholder="title"></label>
-        <label>Length:<input type="number" name="length" class="movie-length" placeholder="93"></label>
-        <label>Genre: 
-            <select name="genre" id="genre">
-                <option value="action">Action</option>
-                <option value="drama">Drama</option>
-                <option value="adventure">Adventure</option>
-                <option value="comedy">Comedy</option>
-            </select>
-        </label>
-        <input type="button" class="movie-submit" value="Submit">
+        <div class="movies-holder"></div>
+    
+        <hr>
+    
+        <form>
+            <legend>Program</legend>
+            <div class="form-group col-3">
+                <label>Program date
+                    <input type="date" class="form-control program-date" name="program-date" aria-describedby="emailHelp">
+                </label>
+            </div>
+            <div class="col-3">
+                    <input type="button" class="btn btn-primary program-submit" value="Create program">
+                </div>
+        </form>
         
-    </form>
+    </div>
+    
+    
 
-    <div class="movies-holder"></div>
 
-    <hr>
 
-    <form>
-        <label><input type="date" class="program-date"></label> 
-        <input type="button" class="program-submit" value="submit">
-    </form>
 
+
+
+
+    <script src="./js/constructors.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 </html>
