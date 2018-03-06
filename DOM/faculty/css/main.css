@@ -1,0 +1,24 @@
+.h1-container {
+    height: 100px;
+}
+
+.professor-form, .student-form {
+    margin-top: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+.jumbotron {
+    height: 300px;
+}
+
+.mb-3 {
+    padding-left: 0;
+}
+
+/* .display-professors {
+    height: 200px;
+    margin: 50px;
+} */

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">        
+        <div class="jumbotron">
+            <h1 class="display-4 text-center"></h1>
+            <h3 class="text-center">Welcome to site of best faculty in the world</h3>
+        </div>
+    
+        <div class="faculty-form">
+            <form>
+                <div class="form-group">
+                    <label>Faculty:
+                        <input type="text" class="form-control faculty-input" placeholder="Enter faculty">
+                    </label>
+                </div>
+            <input type="button" value="Add faculty" class="btn btn-primary add-faculty">
+            </form>
+        </div>
+
+        <div>
+            <form class="professor-form">
+                
+                <div class="form-group">
+                    <label>Name:
+                        <input type="text" class="form-control professor-name-input" placeholder="Enter name">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Last name:
+                        <input type="text" class="form-control professor-lastName-input" placeholder="Enter last name">
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Salary:
+                        <input type="text" class="form-control professor-salary-input" placeholder="Enter salary">
+                    </label>
+                </div>             
+
+                <div class="input-group mb-3 col-4">
+                    <label class="input-group-text">Select office: 
+                        <select class="custom-select select-professor-office">
+                            <optgroup label="First floor">
+                                <option value="0">Office 1</option>
+                                <option value="1">Office 2</option>
+                                <option value="2">Office 3</option>
+                            </optgroup>
+                            <optgroup label="Second floor">
+                                <option value="3">Office 1</option>
+                                <option value="4">Office 2</option>
+                                <option value="5">Office 3</option>
+                            </optgroup>
+                            <optgroup label="Third floor">
+                                <option value="6">Office 1</option>
+                                <option value="7">Office 2</option>
+                                <option value="8">Office 3</option>
+                            </optgroup>  
+                        </select>
+                    </label>
+                </div>
+                
+                <input type="button" value="Add professor" class="btn btn-primary add-professor">
+             </form>
+
+             <form class="student-form">
+                
+                    <div class="form-group">
+                        <label>Name:
+                            <input type="text" class="form-control student-name-input" placeholder="Enter name">
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Last name:
+                            <input type="text" class="form-control student-lastName-input" placeholder="Enter last name">
+                        </label>
+                    </div>
+    
+                    <div class="form-group">
+                        <label>Number of index:
+                            <input type="number" class="form-control index-number-input" placeholder="Index number">
+                        </label>
+                    </div>             
+    
+                    <div class="input-group mb-3 col-4">
+                        <label class="input-group-text">Select status: 
+                            <select class="custom-select select-student-status">
+                                <option value="0">Regular</option>
+                                <option value="1">Remote</option>
+                                <option value="2">Graduated</option>
+                            </select>
+                        </label>
+                    </div>
+                    
+                    <input type="button" value="Add student" class="btn btn-primary add-student">
+                 </form>
+
+                <form>
+                    <div class="form-group">
+                        <label>Subject:
+                            <input type="text" class="form-control exam-subject-input" placeholder="Enter subject">
+                        </label>
+                    </div>
+
+                    <div class="display-professors input-group mb-3 col-4"></div>
+
+                    <div class="form-group">
+                        <label>Subject:
+                            <input type="date" class="form-control exam-date-input" placeholder="Date of exam">
+                        </label>
+                    </div>
+
+                    <div class="input-group mb-3 col-4">
+                        <label class="input-group-text">Grade: 
+                            <select class="custom-select select-student-status">
+                                <option value="5">Fail</option>
+                                <option value="6">Six</option>
+                                <option value="7">Seven</option>
+                                <option value="8">Eight</option>
+                                <option value="9">Nine</option>
+                                <option value="10">Ten</option>
+                            </select>
+                        </label>
+                    </div>
+                    <input type="button" value="Add exam" class="btn btn-primary add-exam">
+                </form>
+        </div>
+        
+    </div>
+    
+    <script src="./js/constants.js"></script>
+    <script src="./js/constructors.js"></script>
+    <script src="./js/helpers.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
