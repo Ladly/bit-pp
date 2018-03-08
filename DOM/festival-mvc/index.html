@@ -25,12 +25,17 @@
                 </div>
                 <div class="form-group col-3">
                     <label>Movie length(min)                     
-                      <input type="number" class="form-control movie-length" placeholder="Enter movie length">
+                      <input 
+                      type="number" 
+                      class="form-control movie-length" 
+                      placeholder="Enter movie length"
+                      >
                     </label>
                 </div>
                 <div class="form-group col-3">
                     <label for="genre">Genre</label>
                     <select class="form-control" id="genre">
+                        <option value="-">-</option>
                         <option value="action">Action</option>
                         <option value="drama">Drama</option>
                         <option value="adventure">Adventure</option>
@@ -38,29 +43,62 @@
                     </select>
                 </div>
                 <div class="col-3">
-                    <input type="button" class="btn btn-primary movie-submit" value="Create Movie">
+                    <input 
+                    type="button" 
+                    class="btn btn-primary movie-submit" 
+                    value="Create movie">
                 </div>
               </form>
     
         <div class="movies-holder"></div>
     
         <hr>
+
+        <form>
+            <legend>Program</legend>
+                <div class="form-group col-3">
+                  <label>Pick date program
+                      <input type="date" 
+                      class="form-control program-date" 
+                      name="movie-title" aria-describedby="emailHelp" 
+                      placeholder="Enter title">
+                    </label>
+                </div>
+               
+                <div class="col-3">
+                    <input type="button" 
+                    class="btn btn-primary program-submit" 
+                    value="Create program">
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="program-movies">Movies</label>
+                    <select class="form-control" id="program-movies"></select>
+                </div>
+
+                <div class="form-group col-3">
+                    <label for="program-selection">Program</label>
+                    <select class="form-control" id="program-selection"></select>
+                </div>
+
+                <div class="col-3">
+                    <input type="button" 
+                    class="btn btn-primary program-movie-submit" 
+                    value="Add movie to program">
+                </div>
+              </form>
         
-    </div>
-    
-    
+    </div> 
 
 
-
-
-
-
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
     crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
     crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
     crossorigin="anonymous"></script>
     <script src="./js/model.js"></script>
     <script src="./js/view.js"></script>

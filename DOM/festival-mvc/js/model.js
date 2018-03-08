@@ -9,6 +9,19 @@ var model = (function() {
         this.genre = genre;
     }
 
+    Movie.prototype.getData = function() {
+        return this.genre + ", " + this.title + ", " + this.length;
+    };
+
+    function Program(date) {
+        this.date = new Date(date);
+        this.programMovieList = [];
+    }
+
+    Program.prototype.addMovie = function(movie) {
+        this.programMovieList.push(movie);
+    };
+
     function createMovie(movieData) {
         movie = new Movie(movieData.title, movieData.length, movieData.genre);
         data.movieList.push(movie);
